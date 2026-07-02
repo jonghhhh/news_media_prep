@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>툴민(Toulmin) 6요소 논증 구조 완전정복 — 언론고시 글쓰기 적용 매뉴얼 · 언론고시 매뉴얼</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="topbar">
+  <button id="menuBtn" aria-label="메뉴">☰</button>
+  <span class="topbar-title">툴민(Toulmin) 6요소 논증 구조 완전정복 — 언론고시 글쓰기 적용 매뉴얼</span>
+</div>
+<div id="backdrop"></div>
+<div class="wrap">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html">📰 언론고시 매뉴얼</a>
+    <nav class="manuals"><div class="nav-title">전체 매뉴얼</div>
+<ul class="man-list">
+<li><a class="" href="index.html">00 · 통합안내</a></li>
+<li><a class="" href="01_cover_letter.html">01 · 자기소개서</a></li>
+<li><a class="" href="02_essay.html">02 · 논술</a></li>
+<li><a class="" href="03_composition.html">03 · 작문</a></li>
+<li><a class="" href="04_pd_proposal.html">04 · PD기획안</a></li>
+<li><a class="" href="05_reporting.html">05 · 현장취재·기사</a></li>
+<li><a class="" href="06_interview.html">06 · 면접</a></li>
+<li><a class="" href="07_foundation.html">07 · 기초지식</a></li>
+<li><a class="active" href="08_toulmin.html">08 · 툴민 논증</a></li>
+<li><a class="" href="09_creative_writing.html">09 · 독창적 사고</a></li>
+</ul></nav>
+    <nav class="toc"><div class="nav-title">목차</div>
+<ul class="toc-list">
+<li class="t2"><a href="#s1">0. 들어가기 — &quot;논증&quot;이 뭔지부터</a></li>
+<li class="t2"><a href="#s2">1. 툴민 모델 개관 — 3대 핵심 + 3대 보강</a></li>
+<li class="t2"><a href="#s3">2. 6요소 하나씩 — 개념·비유·판별질문·예시·실수</a></li>
+<li class="t3"><a href="#s4">① 주장 (Claim / 主張)</a></li>
+<li class="t3"><a href="#s5">② 근거 (Grounds / Data / 根據)</a></li>
+<li class="t3"><a href="#s6">③ 보증 (Warrant / 保證) —6요소 중 가장 중요하고 가장 자주 빠지는 부품</a></li>
+<li class="t3"><a href="#s7">④ 보강 (Backing / 補强)</a></li>
+<li class="t3"><a href="#s8">⑤ 한정어 (Qualifier / 限定語)</a></li>
+<li class="t3"><a href="#s9">⑥ 반박 (Rebuttal / 反駁)</a></li>
+<li class="t2"><a href="#s10">3. 통합 예제 — 사설 한 편을 6요소로 완전 분해</a></li>
+<li class="t2"><a href="#s11">4. 좋은 논증 vs 나쁜 논증 — 툴민으로 자가진단</a></li>
+<li class="t3"><a href="#s12">4-1. 4차원 자가진단</a></li>
+<li class="t3"><a href="#s13">4-2. 비판적 질문 8개(CQoT) — 논증 부실 탐지기</a></li>
+<li class="t3"><a href="#s14">4-3. 대표적 &#x27;나쁜 논증&#x27; 5종 (툴민 관점)</a></li>
+<li class="t2"><a href="#s15">5. 6요소로 글을 &#x27;쓰는&#x27; 순서 (읽기의 반대 방향)</a></li>
+<li class="t2"><a href="#s16">6. 다른 글쓰기에도 적용되나? — 요소별 매핑 한눈에</a></li>
+<li class="t2"><a href="#s17">---</a></li>
+<li class="t2"><a href="#s18">A. 논술 — 완전 적용 (가장 강력) ★★★★★</a></li>
+<li class="t3"><a href="#s19">A-1. 논술 5축 채점기준 ↔ 툴민 6요소 매핑</a></li>
+<li class="t3"><a href="#s20">A-2. 실전: 논제를 6요소 개요로 (예시)</a></li>
+<li class="t3"><a href="#s21">A-3. 툴민 기반 논술 첨삭 진단표 (초안 가져오면 이걸로 본다)</a></li>
+<li class="t2"><a href="#s22">B. 면접 답변 — 강력 적용 ★★★★☆</a></li>
+<li class="t2"><a href="#s23">C. 자기소개서 — 강력 적용(역량 논증) ★★★★☆</a></li>
+<li class="t2"><a href="#s24">D. PD 기획안 — 적용 가능(기획의 설득 구조) ★★★☆☆</a></li>
+<li class="t2"><a href="#s25">E. 작문 — 부분 적용(숨은 논증) ★★★☆☆ / 에세이형 ★★☆☆☆</a></li>
+<li class="t2"><a href="#s26">F. 현장취재·기사작성 — 읽기엔 강력, 쓰기엔 절제 ★★</a></li>
+<li class="t2"><a href="#s27">G. 기초지식(신문 읽기) — 비판적 독해 도구로 최강 ★★★★★</a></li>
+<li class="t2"><a href="#s28">종합 적용도 &amp; 한 장 요약</a></li>
+<li class="t2"><a href="#s29">실전 30일 훈련 루틴 (초보용)</a></li>
+<li class="t2"><a href="#s30">자주 묻는 질문 (FAQ)</a></li>
+<li class="t2"><a href="#s31">관련 자료</a></li>
+</ul></nav>
+  </aside>
+  <main class="main">
+    <header class="page-head"><h1>툴민(Toulmin) 6요소 논증 구조 완전정복 — 언론고시 글쓰기 적용 매뉴얼</h1></header>
+    <article class="content">
+<blockquote>
+<p>이 문서는 스티븐 툴민(Stephen Toulmin, 1958)의 논증 모델 <strong>6요소</strong>를 초보 준비생이 처음부터 이해하고, 논술·작문·PD기획안·자기소개서·면접·기사·신문읽기에 <strong>직접 적용</strong>하도록 만든 실전 매뉴얼입니다.
+근거: <code>\\...\toulmin_analysis</code> 프로젝트(한국어 뉴스 논증구조 자동분석 연구)의 정의·평가틀·실제 분석 사례를 초보용으로 재구성했습니다.
+한 줄 결론부터: <strong>"6요소가 잘 갖춰지면 논술의 논증 구조가 좋아진다"는 직관은 정확합니다.</strong> 툴민은 사실상 '설득하는 글의 설계도'이며, 논술에 가장 강력하게, 그리고 면접·자소서·기획안·작문·기사·독해에도 단계적으로 적용됩니다. 그 지도를 이 문서 하단에 유형별로 크게 정리했습니다.</p>
+</blockquote>
+<hr/>
+<h2 id="s1">0. 들어가기 — "논증"이 뭔지부터</h2>
+<p>초보가 가장 먼저 오해하는 것: <strong>"논술은 내 생각을 잘 쓰는 것"</strong>이라는 생각. 아닙니다. 논술은 <strong>"내 주장이 옳다는 것을 남이 납득하도록 증명하는 것"</strong>입니다. 즉 <em>생각</em>이 아니라 <em>논증(argument)</em>입니다.</p>
+<ul>
+<li><strong>의견</strong>: "나는 의대 증원에 반대한다." → 그냥 감상.</li>
+<li><strong>논증</strong>: "의대 증원은 [이런 근거] 때문에 [이런 논리]로 볼 때 신중해야 한다." → 남을 설득할 수 있는 구조.</li>
+</ul>
+<p>논증에는 <strong>뼈대(구조)</strong>가 있습니다. 툴민은 이 뼈대를 <strong>6개의 부품</strong>으로 분해했습니다. 이 6개를 알면, 내 글이 왜 설득력이 없는지 <strong>부품 단위로 진단</strong>할 수 있습니다. 심사위원(채점관)도 결국 이 부품들이 제대로 끼워졌는지를 봅니다.</p>
+<blockquote>
+<p>비유: 논증은 <strong>다리(bridge)</strong>입니다. 한쪽 기슭(근거)에서 반대쪽 기슭(주장)으로 독자를 건네주는 다리. 그 다리를 지탱하는 교각·상판·난간이 바로 툴민의 6요소입니다. 부품 하나가 빠지면 독자는 강에 빠집니다("그래서 뭐?", "왜 그런데?", "억지 아냐?").</p>
+</blockquote>
+<hr/>
+<h2 id="s2">1. 툴민 모델 개관 — 3대 핵심 + 3대 보강</h2>
+<p>툴민은 1958년 『The Uses of Argument』에서, 수학처럼 딱 떨어지는 형식논리(A면 B다)로는 <strong>현실의 실천적 논증</strong>(법정·정치·언론·일상)을 설명할 수 없다고 봤습니다. 그래서 "실제로 사람들이 설득할 때 쓰는 구조"를 6요소로 모델화했습니다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>구분</th>
+<th>요소</th>
+<th>한 줄 정의</th>
+<th>이걸 안 물으면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3대 핵심</strong></td>
+<td>① 주장 Claim</td>
+<td>내가 받아들이게 하려는 결론</td>
+<td>글의 목적이 없다</td>
+</tr>
+<tr>
+<td></td>
+<td>② 근거 Grounds/Data</td>
+<td>주장을 받치는 사실·자료</td>
+<td>"왜?"에 답 못 함</td>
+</tr>
+<tr>
+<td></td>
+<td>③ 보증 Warrant</td>
+<td>근거→주장을 잇는 <strong>논리의 다리</strong>(대개 암묵)</td>
+<td>"그게 왜 그 주장이 되지?"</td>
+</tr>
+<tr>
+<td><strong>3대 보강</strong></td>
+<td>④ 보강 Backing</td>
+<td>보증(다리)이 튼튼하다는 뒷받침</td>
+<td>다리를 못 믿음</td>
+</tr>
+<tr>
+<td></td>
+<td>⑤ 한정어 Qualifier</td>
+<td>주장의 확신 정도(반드시/아마/경우에 따라)</td>
+<td>오만하거나 무책임함</td>
+</tr>
+<tr>
+<td></td>
+<td>⑥ 반박 Rebuttal</td>
+<td>예상되는 반론·예외와 그에 대한 대응</td>
+<td>외골수·양비론</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>텍스트 도식(머릿속에 새기세요):</strong></p>
+<pre><code>              [근거 Grounds] ────────────▶ [주장 Claim]  ──(⑤한정어: 아마도)
+             (서울·경기 전문의            (증원만으로는
+              52.3% 편중)                 문제 해결 어렵다)
+                    │                          ▲
+              (③보증 Warrant)                  │
+        "의료문제의 핵심은 '수'가 아니라    (⑥반박 Rebuttal)
+         '분포'다 → 편중을 두면 증원 효과   "단, OECD 대비 의사 수
+         는 제한적이다"                     부족은 사실이나…"
+                    │
+              (④보강 Backing)
+        "일본은 지역의무복무제로 편중을 완화한 전례가 있다"
+</code></pre>
+<p>이 그림 하나가 이 매뉴얼 전체의 축입니다. 아래에서 부품을 하나씩 뜯어봅니다.</p>
+<hr/>
+<h2 id="s3">2. 6요소 하나씩 — 개념·비유·판별질문·예시·실수</h2>
+<p>각 요소마다 <strong>"이 질문을 던지면 그 요소가 튀어나온다"</strong>는 판별질문을 함께 외우세요. 글 쓸 때 자문하는 체크리스트가 됩니다.</p>
+<h3 id="s4">① 주장 (Claim / 主張)</h3>
+<ul>
+<li><strong>정의</strong>: 글쓴이가 독자에게 <strong>받아들이게 하려는 최종 결론</strong>. 논술의 '논지', 사설의 '주제문'.</li>
+<li><strong>판별질문</strong>: <em>"그래서 당신이 하고 싶은 말이 결국 뭔데?"</em></li>
+<li><strong>두 층위</strong>:</li>
+<li><strong>핵심 주장(Major Claim)</strong> = 글 전체의 결론. 딱 한 문장으로 말할 수 있어야 함.</li>
+<li><strong>세부 주장(sub-claim)</strong> = 핵심 주장을 떠받치는 중간 기둥들.</li>
+<li><strong>예시</strong>(의대증원 사설): 핵심 주장 = <em>"정부는 의대 증원을 졸속 강행하지 말고 사회적 합의부터 이뤄야 한다."</em></li>
+<li><strong>좋은 주장의 3조건</strong>: ⓐ 명확(모호어 금지) ⓑ 논쟁적(누구나 아는 사실은 주장이 아님) ⓒ 한 문장 요약 가능.</li>
+<li><strong>초보 실수</strong>: 주장이 없거나(현안 요약만 함), 주장이 여러 개로 흩어짐(→ 논지 불명확). <em>논술 5축의 '논지 명확성'이 바로 이 요소.</em></li>
+</ul>
+<h3 id="s5">② 근거 (Grounds / Data / 根據)</h3>
+<ul>
+<li><strong>정의</strong>: 주장을 뒷받침하는 <strong>사실·자료·증거</strong>. "왜 그렇게 생각하는데?"의 답.</li>
+<li><strong>판별질문</strong>: <em>"그 주장, 무슨 근거로?"</em></li>
+<li><strong>근거의 5가지 유형</strong>(툴민 분석 프로젝트의 실제 분류 — 논술·기사에 그대로 유용):</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>유형</th>
+<th>뜻</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>통계 statistical</code></td>
+<td>수치·비율·증감·순위</td>
+<td>"서울·경기 전문의 비율 52.3%" / "OECD 평균 3.7명"</td>
+</tr>
+<tr>
+<td><code>전문가 인용 expert_quote</code></td>
+<td>전문가·당사자 발언</td>
+<td>"서울대 김 교수는 …라고 말했다"</td>
+</tr>
+<tr>
+<td><code>사례 case_example</code></td>
+<td>구체적 사건·판례·타국 사례</td>
+<td>"일본의 지역의무복무제"</td>
+</tr>
+<tr>
+<td><code>법률·문서 document_law</code></td>
+<td>법 조항·판결·공식문서</td>
+<td>"남녀고용평등법 개정안 제○조"</td>
+</tr>
+<tr>
+<td><code>사실 진술 factual</code></td>
+<td>위에 안 드는 사실 기술</td>
+<td>"정부가 2000명 증원을 재확인했다"</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>철칙</strong>: 수치가 하나라도 들어가면 무조건 '통계 근거'. 논술에서 <strong>수치·출처 있는 근거는 가점 1순위</strong>입니다(신문 아닌 책·논문·보고서에서 나온 통계면 차별화까지 됨 → 논술 5축 '근거 충실성').
+- <strong>초보 실수</strong>: 주장만 반복하고 근거를 안 댐 / 근거가 "내 생각엔"(=또 다른 주장) / 남들 다 아는 신문 1면 사실만 씀(차별화 실패).</p>
+</blockquote>
+<h3 id="s6">③ 보증 (Warrant / 保證) — <strong>6요소 중 가장 중요하고 가장 자주 빠지는 부품</strong></h3>
+<ul>
+<li><strong>정의</strong>: 근거가 <strong>왜</strong> 그 주장을 뒷받침하는지 연결해 주는 <strong>논리적 다리(전제·원리)</strong>. 대개 <strong>글에 안 쓰이고 숨어 있음(암묵적)</strong>.</li>
+<li><strong>판별질문</strong>: <em>"그 근거가 어떻게 그 주장으로 이어지지?"</em> / <em>"당신이 당연하게 깔고 있는 전제가 뭐지?"</em></li>
+<li><strong>예시</strong>:</li>
+<li>근거: "서울·경기 전문의 52.3% 편중"</li>
+<li>주장: "증원만으로는 지방 의료 공백을 못 푼다"</li>
+<li><strong>보증(숨은 다리)</strong>: <em>"의료 문제의 본질은 의사 '수'가 아니라 '분포'다. 분포를 안 고치면 늘려도 수도권에 더 몰릴 뿐이다."</em> ← 이 문장을 명시하면 논증이 갑자기 탄탄해짐.</li>
+<li><strong>왜 중요한가</strong>: 보증이 부실하면 그게 바로 <strong>논리적 비약</strong>입니다. "청년 실업률이 높다(근거) → 그러므로 대학을 없애야 한다(주장)"가 황당한 이유 = 둘을 잇는 보증이 말이 안 되기 때문.</li>
+<li><strong>논술 고수의 비밀</strong>: <strong>관점 비틀기 = 남과 다른 보증(다리)을 놓는 것</strong>. 같은 근거(편중 통계)라도 어떤 보증을 까느냐로 결론이 달라집니다. 이게 '독창성'(논술 5축 '관점 독창성')의 정체입니다.</li>
+<li><strong>초보 실수</strong>: 근거만 나열하고 보증 없이 결론으로 점프(가장 흔한 감점). 자명한 보증을 장황하게 설명(지루함).</li>
+</ul>
+<h3 id="s7">④ 보강 (Backing / 補强)</h3>
+<ul>
+<li><strong>정의</strong>: <strong>보증(다리) 자체가 믿을 만하다</strong>는 것을 받쳐주는 추가 지원(이론·통념·권위·상위 사례).</li>
+<li><strong>판별질문</strong>: <em>"그 논리의 다리, 왜 믿어야 하지?"</em></li>
+<li><strong>예시</strong>: 보증("분포가 본질이다")을 → <strong>보강</strong>: "실제로 일본은 의사 수 확대와 함께 지역의무복무제를 병행해 편중을 완화했다"(=보증이 현실에서 통했다는 근거).</li>
+<li><strong>근거 vs 보강 구분</strong>: 근거는 <em>주장</em>을 받치고, 보강은 <em>보증(원리)</em>을 받칩니다. 초보는 굳이 구분 못 해도 되지만, "내 논리(보증)를 학술·해외사례로 뒷받침한다"는 감각만 가지면 글이 묵직해집니다(→ '자료 차별화'와 직결).</li>
+</ul>
+<h3 id="s8">⑤ 한정어 (Qualifier / 限定語)</h3>
+<ul>
+<li><strong>정의</strong>: 주장의 <strong>확신 강도</strong>를 표시하는 말. 논증의 '겸손과 정직'.</li>
+<li><strong>판별질문</strong>: <em>"이 주장, 얼마나 확신하지? 예외는 없나?"</em></li>
+<li><strong>4단계</strong>(프로젝트 분류):</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>표현</th>
+<th>뉘앙스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>단정 definitive</code></td>
+<td>반드시, ~이다, 분명히</td>
+<td>100%</td>
+</tr>
+<tr>
+<td><code>추정 presumptive</code></td>
+<td>대체로, ~로 보인다, 아마</td>
+<td>유력하지만 여지</td>
+</tr>
+<tr>
+<td><code>가능 possible</code></td>
+<td>~일 수 있다, 경우에 따라</td>
+<td>조건부</td>
+</tr>
+<tr>
+<td><code>없음 none</code></td>
+<td>(한정어 없음)</td>
+<td>무한정 단정</td>
+</tr>
+<tr>
+<td>- <strong>왜 중요</strong>: 무한정 단정("증원은 무조건 실패한다")은 반론 하나에 무너집니다. 적절한 한정("편중을 방치한 채 증원만 하면 효과가 제한적일 수 있다")은 <strong>공격받을 틈을 줄이고 오히려 성숙해 보임</strong>. 단, 너무 흐리면 주장이 사라짐(→ 양비론). <strong>한정어는 '자신감'과 '정직' 사이의 균형추.</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>초보 실수</strong>: 전부 단정(오만·허술) 또는 전부 흐림(양비론·무주장). <em>논술에서 "~해야 한다고 볼 수도 있고 아닐 수도 있다"류가 감점되는 이유.</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s9">⑥ 반박 (Rebuttal / 反駁)</h3>
+<ul>
+<li><strong>정의</strong>: <strong>예상되는 반론·예외 상황</strong>과 그에 대한 대응. "이런 경우엔 내 주장이 안 통할 수 있다, 하지만…"</li>
+<li><strong>판별질문</strong>: <em>"내 주장에 누가 뭐라고 반대할까? 그 예외는?"</em></li>
+<li><strong>3가지 처리 방식</strong>(프로젝트 분류):</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>방식</th>
+<th>뜻</th>
+<th>논술에서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>적극 active</code></td>
+<td>반론을 직접 소환해 <strong>재반박</strong></td>
+<td>최고 점수. "물론 OECD 대비 의사 수가 부족한 건 사실이다. <strong>그러나</strong> 편중을 두면…"</td>
+</tr>
+<tr>
+<td><code>소극 passive</code></td>
+<td>반론을 언급만 하고 넘어감(양보)</td>
+<td>무난</td>
+</tr>
+<tr>
+<td><code>없음 absent</code></td>
+<td>반론을 아예 무시</td>
+<td>외골수·감점</td>
+</tr>
+<tr>
+<td>- <strong>왜 중요</strong>: 반박을 <strong>선제적으로 끌어안고 재반박</strong>하면 글이 <strong>입체적·성숙</strong>해집니다. 심사위원은 "이 사람은 반대 입장까지 알고도 이 결론을 냈구나"라고 신뢰합니다. 이게 <strong>양비론과 결정적으로 다른 점</strong>: 양비론은 "양쪽 다 일리 있다"로 끝나고, 적극 반박은 "반대도 일리 있으나 <strong>그럼에도</strong> 내 결론이 옳다"로 <strong>끝맺음</strong>합니다.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>초보 실수</strong>: 반론을 아예 안 다룸(순진함) / 반론만 잔뜩 소개하고 자기 결론이 실종(양비론).</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+<h2 id="s10">3. 통합 예제 — 사설 한 편을 6요소로 완전 분해</h2>
+<p>아래는 실제 사설(의대 증원)입니다. 초보가 "분석"과 "설계"를 둘 다 익히도록, 먼저 <strong>읽으며 분해</strong>해 봅니다.</p>
+<blockquote>
+<p><strong>사설 요지</strong>: 정부가 의대 2000명 증원을 강행. 근거로 OECD 대비 의사 수 부족(2.6명 vs 3.7명), 보사연 2035년 1만5천명 부족 전망 제시. 그러나 의협은 "수만 늘려선 안 된다", 수도권 편중(전문의 52.3%)을 지적. 전문가들은 지역 인프라·필수의료 수가 등 종합대책 병행을 조언, 일본 지역의무복무제 사례 언급. 결론: 숫자 늘리기보다 사회적 합의·종합대책이 먼저다.</p>
+</blockquote>
+<p><strong>6요소 분해:</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>요소</th>
+<th>내용</th>
+<th>유형/수준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>핵심 주장</strong></td>
+<td>정부는 졸속 증원을 멈추고 사회적 합의·종합대책부터 마련해야 한다</td>
+<td>Major Claim</td>
+</tr>
+<tr>
+<td><strong>세부 주장</strong></td>
+<td>단순 증원만으로는 지방 의료 공백을 해결할 수 없다</td>
+<td>sub-claim</td>
+</tr>
+<tr>
+<td><strong>근거 1</strong></td>
+<td>수도권(서울·경기) 전문의 비율 52.3%</td>
+<td><code>통계</code></td>
+</tr>
+<tr>
+<td><strong>근거 2</strong></td>
+<td>전문가들의 종합대책 병행 조언</td>
+<td><code>전문가 인용</code></td>
+</tr>
+<tr>
+<td><strong>근거 3</strong></td>
+<td>일본의 지역의무복무제 병행 사례</td>
+<td><code>사례</code></td>
+</tr>
+<tr>
+<td><strong>보증(숨은 다리)</strong></td>
+<td>의료 문제의 본질은 의사 '수'가 아니라 '분포'다. 분포를 방치한 증원은 수도권 쏠림만 키운다</td>
+<td>(암묵적)</td>
+</tr>
+<tr>
+<td><strong>보강</strong></td>
+<td>일본 사례가 '분포 대책이 실제로 통한다'를 입증</td>
+<td>Backing</td>
+</tr>
+<tr>
+<td><strong>한정어</strong></td>
+<td>"…어렵다", "…병행되어야 한다"</td>
+<td><code>추정 presumptive</code></td>
+</tr>
+<tr>
+<td><strong>반박(적극)</strong></td>
+<td>"OECD 대비 의사 수 부족은 사실이나(양보), 편중을 두면 증원 효과가 제한적이다(재반박)"</td>
+<td><code>active</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>여기서 배우는 것</strong>: 이 사설이 설득력 있는 이유는 6요소가 <strong>다 채워졌기 때문</strong>입니다. 특히 ③보증(수→분포 프레임 전환)과 ⑥적극 반박(정부 근거를 인정하고 넘어섬)이 이 글의 <strong>품격</strong>을 만듭니다. 초보가 썼다면 대개 "증원 반대! 왜냐면 편중되니까!"에서 멈춰 보증·반박이 비어 논리적 비약이 됩니다.</p>
+<blockquote>
+<p><strong>짧은 두 번째 예제</strong>(부동산): 근거 "아파트값 3개월 연속 상승(통계)" → 주장 "대책은 실효성 부족" → <strong>보증</strong> "대책이 효과적이면 상승세가 멈춰야 한다" → 반박(소극) "공급 효과는 시간이 필요하다". 보증을 명시하는 순간 근거와 주장이 연결됨을 확인하세요.</p>
+</blockquote>
+<hr/>
+<h2 id="s11">4. 좋은 논증 vs 나쁜 논증 — 툴민으로 자가진단</h2>
+<p>툴민 연구는 논증 품질을 <strong>4차원(Dalzell)</strong> 과 <strong>비판적 질문 8개(CQoT)</strong> 로 평가합니다. 이를 초보용 <strong>자가 점검 체크리스트</strong>로 바꿨습니다. 내 글을 쓰고 나서 스스로 O/X 해보세요.</p>
+<h3 id="s12">4-1. 4차원 자가진단</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>차원</th>
+<th>자문</th>
+<th>X면 처방</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>구성요소 존재성</strong></td>
+<td>6요소(특히 주장·근거·보증)가 다 있나?</td>
+<td>빠진 부품을 채워라</td>
+</tr>
+<tr>
+<td><strong>논리적 건전성</strong></td>
+<td>근거→주장 연결(보증)이 타당한가? 보증이 자명하지 않고 의미 있나?</td>
+<td>비약 지점에 다리(보증)를 놓아라</td>
+</tr>
+<tr>
+<td><strong>정보적 정확성</strong></td>
+<td>근거가 진짜 사실인가? 지어내지 않았나?</td>
+<td>출처·수치 확인. 환각 제거</td>
+</tr>
+<tr>
+<td><strong>구조적 완결성</strong></td>
+<td>중요한 반론·논점을 빠뜨리지 않았나?</td>
+<td>반박(⑥)을 추가하라</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s13">4-2. 비판적 질문 8개(CQoT) — 논증 부실 탐지기</h3>
+<p>내 논증 한 덩어리(주장+근거+보증)에 대해 8개를 물어 하나라도 '아니오'면 그 부분이 약점입니다.</p>
+<ol>
+<li>근거가 명확한 사실/증거에 기반하는가?</li>
+<li>그 근거가 <strong>실재</strong>하는가(지어낸 것 아닌가)?</li>
+<li>근거→주장의 논리적 연결(보증)이 <strong>존재</strong>하는가?</li>
+<li>그 연결이 <strong>타당</strong>한가?</li>
+<li>논리적 오류(비약·순환논증·허수아비)가 없는가?</li>
+<li>주장이 근거로부터 <strong>도출</strong>되는가?</li>
+<li>보증이 상식·맥락과 어긋나지 않는가?</li>
+<li>전체 논증이 맥락상 그럴듯한가?</li>
+</ol>
+<h3 id="s14">4-3. 대표적 '나쁜 논증' 5종 (툴민 관점)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>증상</th>
+<th>빠진/고장난 부품</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>근거 없는 주장</strong></td>
+<td>② 없음</td>
+<td>"언론은 공정해야 한다"만 반복</td>
+</tr>
+<tr>
+<td><strong>논리적 비약</strong></td>
+<td>③ 보증 부실</td>
+<td>"SNS가 많다 → 그러니 규제해야"</td>
+</tr>
+<tr>
+<td><strong>양비론</strong></td>
+<td>⑥ 반박 처리 실패 + ① 흐림</td>
+<td>"찬반 둘 다 일리…"로 끝</td>
+</tr>
+<tr>
+<td><strong>오만한 단정</strong></td>
+<td>⑤ 한정어 부재</td>
+<td>"반드시 망한다"</td>
+</tr>
+<tr>
+<td><strong>허수아비/외골수</strong></td>
+<td>⑥ 없음</td>
+<td>반대 입장을 왜곡하거나 무시</td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+<h2 id="s15">5. 6요소로 글을 '쓰는' 순서 (읽기의 반대 방향)</h2>
+<p>분석(읽기)은 완성된 글에서 부품을 <strong>꺼내는</strong> 것이고, 작성(쓰기)은 부품을 <strong>끼워</strong> 글을 조립하는 것입니다. 순서가 반대입니다.</p>
+<p><strong>작성 5단계(개요 짜기):</strong>
+1. <strong>① 주장 확정</strong>: 논제에 대한 내 결론을 <strong>한 문장</strong>으로. (못 하면 아직 쓸 준비 안 된 것)
+2. <strong>② 근거 수집</strong>: 그 주장을 받칠 사실 2~3개. 가능하면 <code>통계·사례·전문가</code>로 유형을 섞고, 남들 안 쓰는 자료(책·논문·보고서)로 차별화.
+3. <strong>③ 보증 점검</strong>: 각 근거와 주장 사이에 "왜 이게 그 주장이 되지?"를 자문해 <strong>다리를 명시</strong>. 여기서 <strong>관점 비틀기</strong>(남다른 보증) 시도.
+4. <strong>④⑤⑥ 보강·한정·반박</strong>: 보증을 받칠 보강(이론/해외사례), 확신 강도 조절(한정어), 예상 반론을 끌어와 재반박(적극 반박).
+5. <strong>문장화 + 배치</strong>: 두괄식으로 ①을 앞에, ⑥반박은 본론 후반, 결론에서 ①을 변주 반복.</p>
+<p><strong>개요 템플릿(빈칸 채우기):</strong></p>
+<pre><code>[핵심 주장] ______________________________________ (한 문장)
+ ├ 세부주장1 ____________  ← 근거: ______(유형)  / 보증: ______
+ ├ 세부주장2 ____________  ← 근거: ______(유형)  / 보증: ______
+ ├ (보강) 내 논리를 받칠 이론·해외사례: ______
+ ├ (한정어) 내 확신 강도: 단정 / 추정 / 가능
+ └ (반박) 예상 반론: ______  → 재반박: "그럼에도 ______"
+</code></pre>
+<p>이 표 한 장을 채우면 논술 한 편의 뼈대가 완성됩니다. <strong>시험장에서 5분 개요 = 이 표 채우기.</strong></p>
+<hr/>
+<h2 id="s16">6. 다른 글쓰기에도 적용되나? — 요소별 매핑 한눈에</h2>
+<p><strong>결론: 정도의 차이는 있어도 6요소는 거의 모든 '설득/전달' 글쓰기에 적용됩니다.</strong> 아래 표가 요약이고, 상세는 하단 대형 정리에서 유형별로 풀어씁니다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>글유형</th>
+<th>주장</th>
+<th>근거</th>
+<th>보증</th>
+<th>보강</th>
+<th>한정어</th>
+<th>반박</th>
+<th>적용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>논술</strong></td>
+<td>논지</td>
+<td>자료(통계·사례)</td>
+<td>논리 다리·관점</td>
+<td>이론·해외사례</td>
+<td>확신 조절</td>
+<td>예상반론 재반박</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>면접 답변</strong></td>
+<td>결론 먼저</td>
+<td>경험·사실</td>
+<td>왜 그 결론인지</td>
+<td>—</td>
+<td>겸손·유보</td>
+<td>반대의견 인정 후 소신</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>자기소개서</strong></td>
+<td>"나는 적합"</td>
+<td>경험·성과</td>
+<td>경험→역량 연결</td>
+<td>수치·수상</td>
+<td>과장 회피</td>
+<td>약점→극복 서사</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>PD 기획안</strong></td>
+<td>기획의도</td>
+<td>트렌드·시청데이터</td>
+<td>왜 이 포맷인가</td>
+<td>유사 성공사례</td>
+<td>제작 현실성</td>
+<td>기존물과 차별화</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>작문(시사형)</strong></td>
+<td>메시지·통찰</td>
+<td>관찰·경험·사례</td>
+<td>사례→통찰 연결</td>
+<td>—</td>
+<td>여운·절제</td>
+<td>통념 뒤집기</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>작문(에세이형)</strong></td>
+<td>숨은 메시지</td>
+<td>장면·디테일</td>
+<td>암시적</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td><strong>기사(스트레이트)</strong></td>
+<td>사실 자체</td>
+<td>취재 사실</td>
+<td>암묵(객관)</td>
+<td>—</td>
+<td>인용·조건</td>
+<td>반론 병기</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td><strong>기사(사설·해설)</strong></td>
+<td>논조</td>
+<td>데이터·사례</td>
+<td>가치·논리</td>
+<td>이론</td>
+<td>신중어</td>
+<td>반대 진영</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>신문 읽기(독해)</strong></td>
+<td>(분석 대상)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>★★★★★(도구)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="s17">---</h2>
+<h1>★★ 언론고시 유형별 적용 대(大)정리 ★★</h1>
+<blockquote>
+<p>여기부터가 이 매뉴얼의 <strong>핵심 실전 파트</strong>입니다. 각 유형에서 툴민 6요소를 <strong>어떻게 쓰는지</strong>, 그리고 <strong>첨삭 기준으로 어떻게 쓰는지</strong>를 초보용으로 크게 풀었습니다.
+원리: <strong>"6요소가 잘 갖춰졌는가"를 물으면, 그 글의 논리적 완성도를 부품 단위로 진단할 수 있다.</strong></p>
+</blockquote>
+<hr/>
+<h2 id="s18">A. 논술 — 완전 적용 (가장 강력) ★★★★★</h2>
+<p>논술은 <strong>정의상 논증</strong>이므로 툴민이 100% 들어맞습니다. 앞의 [02_논술 매뉴얼]의 <strong>5축 채점 rubric</strong>과 6요소는 <strong>같은 것을 다른 각도에서</strong> 말합니다.</p>
+<h3 id="s19">A-1. 논술 5축 채점기준 ↔ 툴민 6요소 매핑</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>논술 5축(각 20점)</th>
+<th>대응 툴민 요소</th>
+<th>잘 됐다는 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>논지 명확성</strong></td>
+<td>① 주장(Major Claim)</td>
+<td>결론이 한 문장, 처음부터 분명</td>
+</tr>
+<tr>
+<td><strong>논리 구조</strong></td>
+<td>③ 보증 + ④ 보강</td>
+<td>근거→주장 다리가 촘촘, 비약 없음</td>
+</tr>
+<tr>
+<td><strong>관점 독창성</strong></td>
+<td>③ 보증(다르게 놓기) + ⑥ 반박(뒤집기)</td>
+<td>남들과 다른 다리·재반박</td>
+</tr>
+<tr>
+<td><strong>근거 충실성</strong></td>
+<td>② 근거(유형·차별화)</td>
+<td>통계·사례·책/논문 출처</td>
+</tr>
+<tr>
+<td><strong>문장력</strong></td>
+<td>(표현) + ⑤ 한정어</td>
+<td>정확·간결, 과장/양비론 없음</td>
+</tr>
+</tbody>
+</table></div>
+<p>→ <strong>즉, 논술 고득점 = 6요소를 빠짐없이, 특히 ③보증과 ⑥반박을 남다르게 채우는 것.</strong></p>
+<h3 id="s20">A-2. 실전: 논제를 6요소 개요로 (예시)</h3>
+<p><strong>논제</strong>: "AI 시대, 언론의 역할은 무엇인가?"</p>
+<pre><code>[핵심 주장] AI 시대 언론의 핵심 역할은 '속보 생산'이 아니라 '검증과 맥락 제공'으로 이동해야 한다.
+ ├ 세부주장1: 속보·단순정보는 AI가 대체 → 언론의 비교우위는 '사실 검증'
+ │    근거(통계): 스포츠·증권 기사 자동화 현황  / 보증: 대체 가능한 일은 경쟁력이 아니다
+ ├ 세부주장2: 딥페이크·가짜뉴스 시대엔 '무엇이 진짜인가'를 가려주는 게 언론의 존재이유
+ │    근거(사례): 딥페이크 선거 개입 사례  / 보증: 정보 과잉일수록 신뢰 매개자의 가치가 커진다
+ ├ 보강: 로이터·AP의 '검증 저널리즘' 강화 전략(해외사례)
+ ├ 한정어: "이동해야 한다"(당위, 추정) — 무리한 단정 회피
+ └ 반박(적극): "AI가 팩트체크도 한다"는 반론 → "그러나 최종 책임·판단의 주체는 사람이어야"
+</code></pre>
+<p>이 표를 채운 학생과, "AI 무섭다/언론 중요하다"만 나열한 학생의 글은 <strong>논리 구조 점수에서 결정적으로 갈립니다.</strong></p>
+<h3 id="s21">A-3. 툴민 기반 논술 첨삭 진단표 (초안 가져오면 이걸로 본다)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>점검</th>
+<th>질문</th>
+<th>X일 때 첨삭 멘트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>핵심 주장이 한 문장으로 잡히나?</td>
+<td>"결론이 뭔지 3번 읽어야 나옴 → 서두에 명제로 박아라"</td>
+</tr>
+<tr>
+<td>②</td>
+<td>근거가 주장마다 있나? 유형이 다양한가?</td>
+<td>"2문단은 주장만 있고 근거 공백 / 전부 신문 사실 → 책·통계로 차별화"</td>
+</tr>
+<tr>
+<td>③</td>
+<td><strong>근거와 주장 사이 비약이 없나?</strong></td>
+<td>"여기 논리 점프. '왜 그게 그 결론인지' 한 문장(보증) 넣어라"</td>
+</tr>
+<tr>
+<td>④</td>
+<td>내 논리를 받칠 이론/해외사례가 있나?</td>
+<td>"주장이 공허 → 권위 있는 근거로 무게 실어라"</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>확신 강도가 적절한가(단정/양비 아님)?</td>
+<td>"'반드시 망한다'는 과잉 / '둘 다 일리'는 무주장"</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td><strong>예상 반론을 끌어와 재반박했나?</strong></td>
+<td>"반대 입장이 안 보임 → '물론 …그러나 …' 한 단락 추가"</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>핵심 한 줄</strong>: 논술 첨삭의 80%는 <strong>③보증(비약)</strong> 과 <strong>⑥반박(입체성)</strong> 에서 나온다. 초보의 글은 근거→주장을 그냥 점프하고, 반대 입장을 무시한다.</p>
+</blockquote>
+<hr/>
+<h2 id="s22">B. 면접 답변 — 강력 적용 ★★★★☆</h2>
+<p>면접의 좋은 답변 = <strong>두괄식 "결론 → 근거 → 이유(연결)"</strong> = 툴민의 축약형입니다.</p>
+<ul>
+<li><strong>① 주장</strong>: 질문에 대한 결론을 <strong>첫 문장</strong>에("저는 ~라고 생각합니다").</li>
+<li><strong>② 근거</strong>: 그 근거가 되는 <strong>경험·사실·수치</strong>("왜냐하면 제가 학보사에서 …").</li>
+<li><strong>③ 보증</strong>: 그 경험이 왜 그 결론을 뒷받침하는지 한 마디("이 경험은 마감 압박 속 정확성의 중요성을 가르쳐줬습니다").</li>
+<li><strong>⑤ 한정어</strong>: 겸손·유보로 오만함 방지("물론 상황에 따라 다르겠지만").</li>
+<li><strong>⑥ 반박</strong>: 반대 의견을 인정하고도 소신("그 지적도 일리 있으나, 저는 …").</li>
+</ul>
+<p><strong>예시 질문</strong>: "AI가 기자를 대체할까요?"</p>
+<blockquote>
+<p>(①) "완전히 대체하진 못한다고 봅니다. (②) 이미 증권·스포츠 기사는 자동화됐지만, (③) 취재원의 신뢰를 얻고 맥락을 판단하는 일은 데이터가 아니라 사람의 관계와 책임에서 나오기 때문입니다. (⑥) 물론 AI가 팩트체크를 돕겠지만, (①재확인) 최종 판단의 책임 주체는 여전히 기자여야 합니다."</p>
+</blockquote>
+<p><strong>면접 첨삭 기준</strong>: 결론이 먼저 나왔나(①)? 근거가 구체적 경험인가(②)? 결론과 경험이 논리적으로 연결되나(③)? 외골수 아니게 반론을 품었나(⑥)? → [06_면접 매뉴얼]의 답변 평가와 동일 축.</p>
+<hr/>
+<h2 id="s23">C. 자기소개서 — 강력 적용(역량 논증) ★★★★☆</h2>
+<p>자소서의 본질은 <strong>"나는 이 직무에 적합하다"는 주장을 경험으로 증명하는 논증</strong>입니다. 유명한 <strong>STAR 기법(Situation-Task-Action-Result)</strong> 은 사실상 툴민의 변형입니다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>툴민</th>
+<th>자소서에서</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 주장</td>
+<td>"나는 ~역량을 갖춘 기자 재목"</td>
+<td>"저는 마감 압박 속에서도 정확성을 지키는 사람입니다"</td>
+</tr>
+<tr>
+<td>② 근거</td>
+<td>구체적 경험(사례형 근거)</td>
+<td>"학보사 시절 3시간 만에 사건 기사를 마감하며…"</td>
+</tr>
+<tr>
+<td>③ 보증</td>
+<td>그 경험이 <strong>왜 그 역량을 증명</strong>하는지</td>
+<td>"이 경험은 속도와 정확성의 균형이 훈련으로 가능함을 보여줍니다"</td>
+</tr>
+<tr>
+<td>④ 보강</td>
+<td>성과·수치·수상</td>
+<td>"해당 기사가 학교 대상 특종상 수상"</td>
+</tr>
+<tr>
+<td>⑤ 한정어</td>
+<td>과장 회피</td>
+<td>"완벽하진 않았지만" (진정성)</td>
+</tr>
+<tr>
+<td>⑥ 반박</td>
+<td>약점→극복 서사</td>
+<td>"처음엔 사실 확인이 느렸으나, 체크리스트를 만들어 …"</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>자소서 첨삭 포인트(툴민식)</strong>: 초보 자소서는 대개 <strong>③보증이 빠져</strong> "경험 나열 → 그래서 뭐?"가 됩니다. "이 경험이 <strong>기자/PD 직무의 어떤 역량</strong>을 증명하는가"라는 <strong>보증 한 문장</strong>을 각 문단에 심는 순간 자소서가 '논증'이 됩니다. → [01_자기소개서 매뉴얼]의 '경험→역량 연결'과 동일.</p>
+</blockquote>
+<hr/>
+<h2 id="s24">D. PD 기획안 — 적용 가능(기획의 설득 구조) ★★★☆☆</h2>
+<p>기획안은 <strong>"이 프로그램을 만들어야 한다(뽑아야 한다)"를 심사위원에게 설득하는 논증</strong>입니다.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>툴민</th>
+<th>기획안에서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 주장</td>
+<td><strong>기획의도</strong>("왜 지금 이 프로그램인가")</td>
+</tr>
+<tr>
+<td>② 근거</td>
+<td>시청 트렌드·타깃 니즈·유사 성공/실패 데이터</td>
+</tr>
+<tr>
+<td>③ 보증</td>
+<td>그 트렌드가 왜 이 포맷으로 이어지는가(기획의도↔구성 연결)</td>
+</tr>
+<tr>
+<td>④ 보강</td>
+<td>유사 포맷의 성공 사례(레퍼런스)</td>
+</tr>
+<tr>
+<td>⑤ 한정어</td>
+<td>제작 현실성(예산·섭외 가능 범위)</td>
+</tr>
+<tr>
+<td>⑥ 반박</td>
+<td>"기존에도 비슷한 게 있지 않나?"에 대한 <strong>차별화 포인트</strong></td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>기획안 첨삭 포인트</strong>: '재밌겠다'는 감(感)만 있고 <strong>①기획의도(주장)와 ③연결(보증)이 약하면</strong> 심사에서 광탈. "왜 이 소재가, 왜 지금, 왜 이 포맷이어야 하는가"의 <strong>논증 사슬</strong>을 세워라. 특히 ⑥차별화(기존물과 다른 점)는 기획안의 생명. → [04_PD기획안 매뉴얼]의 '차별화·기획의도'와 직결.</p>
+</blockquote>
+<hr/>
+<h2 id="s25">E. 작문 — 부분 적용(숨은 논증) ★★★☆☆ / 에세이형 ★★☆☆☆</h2>
+<p>작문은 논증이 아니라 <strong>표현·통찰</strong>이 중심이라 툴민을 그대로 대면 딱딱해집니다. 하지만 <strong>'숨은 뼈대'로는 유효</strong>합니다.</p>
+<ul>
+<li><strong>시사형 작문</strong>(사회 현안+문장력): 툴민이 잘 통함. <strong>통찰(메시지)=①주장</strong>, <strong>경험·관찰=②근거</strong>, <strong>그 사례가 왜 그 통찰로 이어지는가=③보증</strong>. 단, 겉으로는 드러내지 말고 <strong>암시</strong>하라.</li>
+<li><strong>에세이형 작문</strong>('내 이야기'+여운): 툴민은 <strong>뒤에 숨겨두는 설계도</strong>로만. 표면은 장면·묘사·여운이지만, 속으로 "이 글이 결국 말하려는 하나의 메시지(①)"가 있어야 산만해지지 않음.</li>
+<li><strong>반박(⑥)의 변형 = '통념 뒤집기'</strong>: 작문의 '무릎을 탁 치는' 지점은 대개 독자의 예상(통념)을 뒤집는 데서 옵니다. 이는 툴민의 '예상 반론을 의식하고 넘어서는' 감각과 같은 뿌리.</li>
+</ul>
+<blockquote>
+<p><strong>작문 첨삭 포인트(툴민식)</strong>: "이 글이 결국 말하려는 <strong>한 문장(①)</strong> 이 있나?"를 물어라. 없으면 신변잡기. 단, 논술처럼 근거·보증을 <strong>드러내면</strong> 작문의 맛이 죽으니 <strong>숨기되 존재하게</strong>. → [03_작문 매뉴얼]의 '통찰 vs 개똥철학'과 연결(개똥철학=보증 없는 자기만족).</p>
+</blockquote>
+<hr/>
+<h2 id="s26">F. 현장취재·기사작성 — 읽기엔 강력, 쓰기엔 절제 ★★</h2>
+<ul>
+<li><strong>스트레이트 기사</strong>: 표면상 '사실 전달'이지만 구조는 툴민입니다. <strong>주장=핵심 사실(리드)</strong>, <strong>근거=취재된 사실(document_law·statistical)</strong>, <strong>보증은 객관성 때문에 암묵</strong>, <strong>반박=반론 병기(양측 인용)</strong>. 위 [국회 법안 통과] 분석 예처럼, 좋은 기사는 근거 유형이 명확하고 반론이 병기됩니다.</li>
+<li><strong>취재 단계 = ②근거 수집 그 자체</strong>: 취재원 인터뷰(expert_quote), 문서 확보(document_law), 통계 확인(statistical), 현장 관찰(factual) — 근거의 5유형을 <strong>발로 모으는</strong> 일.</li>
+<li><strong>사설·해설 기사 작성</strong>: 논술과 동일하게 6요소 완전 적용(→ A절).</li>
+</ul>
+<blockquote>
+<p><strong>기사 첨삭 포인트(툴민식)</strong>: ② 근거가 <strong>사실</strong>인가(환각·미확인 금지 — 툴민 프로젝트의 제1원칙 '기사에 없는 정보 추출 금지'와 동일). 스트레이트에선 ③보증(기자의 해석)을 <strong>본문에 노출하지 말 것</strong>(주관 개입 감점). 반대로 사설은 ③보증을 <strong>명시</strong>해야 함. → [05_현장취재·기사작성 매뉴얼]의 '사실성·객관' 기준과 직결.</p>
+</blockquote>
+<hr/>
+<h2 id="s27">G. 기초지식(신문 읽기) — 비판적 독해 도구로 최강 ★★★★★</h2>
+<p>역설적으로 툴민의 <strong>가장 강력한 용도는 '쓰기'가 아니라 '읽기'</strong> 입니다. <code>toulmin_analysis</code> 프로젝트 자체가 사설 138건을 6요소로 분해한 연구입니다. 준비생이 매일 사설을 툴민으로 분해하면:</p>
+<ol>
+<li><strong>논술 재료가 쌓인다</strong>: 사설의 ②근거(통계·사례)와 ③보증(프레임)을 노트에 모으면 곧 논술 논거 은행.</li>
+<li><strong>논리 훈련이 된다</strong>: "이 사설의 보증은 뭐지? 비약은 없나? 반박은 처리했나?"를 물으면 논증 감각이 급성장.</li>
+<li><strong>매체 논조 비교</strong>: 같은 사안, 다른 신문의 사설을 6요소로 비교하면 <strong>관점 비틀기</strong>의 재료가 됨(같은 근거, 다른 보증 → 다른 결론).</li>
+<li><strong>가짜뉴스·오류 탐지</strong>: CQoT 8질문으로 부실 논증을 잡아냄.</li>
+</ol>
+<p><strong>초보용 '사설 툴민 노트' 루틴(하루 10분)</strong>:</p>
+<pre><code>오늘 사설: __________ (신문/날짜)
+① 핵심 주장: ______
+② 근거 2~3개(+유형): ______
+③ 숨은 보증(프레임): ______   ← 가장 중요! 필자가 깔아둔 전제 찾기
+⑤ 한정어(확신 강도): ______
+⑥ 반박 처리(적극/소극/없음): ______
+내 생각: 다른 보증(관점)으로 반대 결론도 가능한가? ______
+</code></pre>
+<p>→ [07_기초지식 매뉴얼]의 '뉴스일기(사실-의미-배경)'를 <strong>논증 버전으로 업그레이드</strong>한 것.</p>
+<hr/>
+<h2 id="s28">종합 적용도 &amp; 한 장 요약</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>유형</th>
+<th>적용도</th>
+<th>가장 중요한 요소</th>
+<th>핵심 첨삭 질문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>논술</strong></td>
+<td>★★★★★</td>
+<td>③보증·⑥반박</td>
+<td>비약 없나? 반론 재반박했나?</td>
+</tr>
+<tr>
+<td><strong>신문읽기(독해)</strong></td>
+<td>★★★★★(도구)</td>
+<td>③보증 찾기</td>
+<td>필자의 숨은 전제는?</td>
+</tr>
+<tr>
+<td><strong>면접 답변</strong></td>
+<td>★★★★☆</td>
+<td>①두괄+③연결</td>
+<td>결론 먼저·근거 구체적?</td>
+</tr>
+<tr>
+<td><strong>자기소개서</strong></td>
+<td>★★★★☆</td>
+<td>③경험→역량 연결</td>
+<td>"그래서 무슨 역량?"</td>
+</tr>
+<tr>
+<td><strong>PD 기획안</strong></td>
+<td>★★★☆☆</td>
+<td>①기획의도·⑥차별화</td>
+<td>왜 지금 이 포맷?</td>
+</tr>
+<tr>
+<td><strong>작문(시사형)</strong></td>
+<td>★★★☆☆</td>
+<td>①메시지(숨김)</td>
+<td>결국 한 문장은?</td>
+</tr>
+<tr>
+<td><strong>기사(사설)</strong></td>
+<td>★★★★★</td>
+<td>6요소 전부</td>
+<td>논술과 동일</td>
+</tr>
+<tr>
+<td><strong>기사(스트레이트)</strong></td>
+<td>★★</td>
+<td>②사실·⑥반론병기</td>
+<td>근거 사실? 주관 개입?</td>
+</tr>
+<tr>
+<td><strong>작문(에세이형)</strong></td>
+<td>★★</td>
+<td>①숨은 메시지</td>
+<td>산만하지 않나?</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>가장 큰 그림</strong>: 툴민 6요소는 <strong>"주장을 어떻게 정당화하는가"의 보편 문법</strong>입니다. 논술·사설처럼 대놓고 설득하는 글에선 6요소를 <strong>드러내고</strong>, 작문·에세이처럼 감성으로 스미는 글에선 6요소를 <strong>숨깁니다</strong>. 하지만 <strong>뼈대는 어디에나 있습니다.</strong> 초보가 이 6개만 몸에 익히면, 어떤 글쓰기 전형에서도 "내 글이 왜 설득이 안 되는지"를 스스로 진단할 수 있습니다.</p>
+</blockquote>
+<hr/>
+<h2 id="s29">실전 30일 훈련 루틴 (초보용)</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>주차</th>
+<th>목표</th>
+<th>매일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1주</td>
+<td>6요소 눈에 익히기</td>
+<td>사설 1편 → 6요소 분해 노트(위 템플릿)</td>
+</tr>
+<tr>
+<td>2주</td>
+<td>보증(③) 감각</td>
+<td>사설의 '숨은 전제' 찾기 집중 + 같은 사안 2개 신문 비교</td>
+</tr>
+<tr>
+<td>3주</td>
+<td>반박(⑥)·한정어(⑤)</td>
+<td>사설의 반론 처리 방식 분류 + 내가 반대 결론 세워보기</td>
+</tr>
+<tr>
+<td>4주</td>
+<td>쓰기로 전환</td>
+<td>논제 1개 → 6요소 개요표 채우기 → 800자 논술 → 진단표로 자가첨삭</td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+<h2 id="s30">자주 묻는 질문 (FAQ)</h2>
+<p><strong>Q. 6개를 매번 다 넣어야 하나요?</strong>
+A. <strong>핵심 3개(주장·근거·보증)는 필수.</strong> 보강·한정어·반박은 글 수준을 높이는 옵션이지만, 논술·사설에선 <strong>반박(⑥)까지 넣어야 고득점</strong>입니다. 짧은 작문·스트레이트 기사에선 일부만.</p>
+<p><strong>Q. 보증(Warrant)이 제일 어려워요.</strong>
+A. 정상입니다. 요령: 근거와 주장을 나란히 써놓고 <strong>"그러니까 (왜냐하면) ___"</strong> 의 빈칸을 소리 내어 채워보세요. 그 빈칸이 보증입니다. 빈칸이 안 채워지면 그게 바로 비약 지점.</p>
+<p><strong>Q. 툴민을 알면 글이 딱딱해지지 않나요?</strong>
+A. 툴민은 <strong>설계도</strong>지 문체가 아닙니다. 뼈대는 툴민으로 잡고, 살(문장·비유·리듬)은 각 유형 매뉴얼의 표현 원칙으로 붙이세요. 특히 작문은 뼈대를 <strong>숨겨야</strong> 합니다.</p>
+<p><strong>Q. '관점 독창성'과 툴민은 무슨 관계인가요?</strong>
+A. 독창성 = <strong>남과 다른 보증(③)을 놓거나, 통념을 반박(⑥)으로 뒤집는 것</strong>. 근거(사실)는 남과 같아도, <strong>다리(보증)를 다르게 놓으면 다른 결론</strong>에 도달합니다. 이것이 논술에서 '관점 비틀기'의 논리적 정체입니다.</p>
+<hr/>
+<h2 id="s31">관련 자료</h2>
+<ul>
+<li>이 매뉴얼의 자매편: <code>02_논술_매뉴얼.md</code>(5축 rubric), <code>01_자기소개서</code>, <code>03_작문</code>, <code>04_PD기획안</code>, <code>05_현장취재_기사작성</code>, <code>06_면접</code>, <code>07_기초지식</code>, <code>00_통합안내_및_공통첨삭기준.md</code></li>
+<li>이론·분석 엔진 원천: <code>toulmin_analysis</code> 프로젝트(6요소 정의·근거 5유형·Dalzell 4차원 평가·CQoT 8질문·한국 사설 138건 분석 사례)</li>
+<li>더 깊이: Toulmin(1958) 『The Uses of Argument』; Karbach(1987) 작문교육 적용; 현남숙(2010) 인문학 글쓰기에서 툴민 활용</li>
+</ul></article>
+    <footer class="foot">언론고시 논술·작문 대비 매뉴얼 · 파란 제목을 클릭하면 수집 원문(사례)을 볼 수 있습니다.</footer>
+  </main>
+</div>
+<div id="modal" class="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="닫기">✕</button>
+    <h3 id="mTitle"></h3>
+    <div class="modal-meta" id="mMeta"></div>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
